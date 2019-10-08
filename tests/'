@@ -1,0 +1,10 @@
+const Page = require('./helpers/page');
+
+let page;
+
+beforeEach(async () => {
+  page = await new Page.build();
+  await page.goto('localhost:3000');
+});
+
+
